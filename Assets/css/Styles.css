@@ -1,0 +1,38 @@
+/* Sidebar Animation */
+.sidebar {
+  transition: all 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 5rem;
+}
+
+.sidebar.collapsed .nav-text,
+.sidebar.collapsed #sidebarCollapse i {
+  display: none;
+}
+
+.sidebar.collapsed #sidebarCollapse i.fa-chevron-right {
+  display: block;
+}
+
+/* Skill Cards */
+.skill-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Progress Bar Animation */
+.skill-bar div {
+  transition: width 1s ease-in-out;
+}
+
+/* Hover Effects */
+.nav-link:hover .nav-icon {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
