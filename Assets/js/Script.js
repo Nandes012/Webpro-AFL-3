@@ -36,4 +36,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
   window.addEventListener('scroll', animateOnScroll);
   animateOnScroll(); // Initialize
+
+  // Add this to your existing script.js
+document.addEventListener('DOMContentLoaded', function() {
+  // ... existing code ...
+
+  // Project card hover effects
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.querySelector('.project-image').style.transform = 'scale(1.02)';
+    });
+    card.addEventListener('mouseleave', function() {
+      this.querySelector('.project-image').style.transform = 'scale(1)';
+    });
+  });
+
+  // Add project button functionality
+  document.getElementById('addProjectBtn')?.addEventListener('click', function() {
+    alert('Add new project functionality would go here');
+    // You can implement a modal or form to add new projects
+  });
+});
 });
